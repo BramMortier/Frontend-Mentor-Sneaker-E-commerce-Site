@@ -275,7 +275,7 @@ ul li:hover::after {
 
 /* header mobile responsive*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 420px){
   .page-container {
     width: 100%;
   }
@@ -538,7 +538,7 @@ ul li:hover::after {
 
 /* body mobile responsive */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   .main-content-container {
     margin-top: 0;
     flex-direction: column;
