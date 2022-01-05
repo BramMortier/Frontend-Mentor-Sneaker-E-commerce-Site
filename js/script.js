@@ -24,6 +24,7 @@ let carouselPosition = 0;
 
 // shopping cart variables
 const cartButton = document.getElementById('cart-button');
+const cartCloseButton = document.getElementById('cart-close-button');
 const shoppingCartOverlay = document.getElementById('shopping-cart');
 const itemList = document.getElementById('item-list');
 const addToCartButton = document.getElementById('add-to-cart');
@@ -115,6 +116,10 @@ cartButton.addEventListener('click', () => {
   shoppingCartOverlay.classList.toggle('shopping-cart-open');
 });
 
+cartCloseButton.addEventListener('click', () => {
+  shoppingCartOverlay.classList.remove('shopping-cart-open');
+})
+
 // add to cart event listener
 addToCartButton.addEventListener('click', () => {
   itemAmount = counterValue;
@@ -155,7 +160,3 @@ function ItemAmount() {
     emptyCartText.style.display = 'inline-block';
   }
 }
-
-
-
-
